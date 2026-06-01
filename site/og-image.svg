@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#f0ece3"/>
+  <rect x="0" y="0" width="1200" height="4" fill="#9a6a3c" opacity="0.6"/>
+  <rect x="0" y="626" width="1200" height="4" fill="#9a6a3c" opacity="0.15"/>
+  <radialGradient id="glow" cx="75%" cy="20%" r="55%">
+    <stop offset="0%" stop-color="#9a6a3c" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#f0ece3" stop-opacity="0"/>
+  </radialGradient>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <!-- Brand mark -->
+  <g transform="translate(80, 60)">
+    <circle cx="22" cy="22" r="21" stroke="#9a6a3c" stroke-opacity="0.28" stroke-width="1.4" fill="none"/>
+    <path d="M22 5 L26.2 17.8 L39 22 L26.2 26.2 L22 39 L17.8 26.2 L5 22 L17.8 17.8 Z" fill="#9a6a3c"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="124" y="88" font-family="Georgia, serif" font-size="26" font-weight="400" fill="#1d1b17" letter-spacing="-0.3">Spark AI Flow</text>
+  <!-- Divider -->
+  <line x1="80" y1="130" x2="340" y2="130" stroke="#9a6a3c" stroke-width="1" opacity="0.4"/>
+  <!-- Headline -->
+  <text x="80" y="300" font-family="Georgia, serif" font-size="76" font-weight="400" fill="#1d1b17" letter-spacing="-2">Your expertise,</text>
+  <text x="80" y="392" font-family="Georgia, serif" font-size="76" font-weight="400" fill="#1d1b17" letter-spacing="-2">on call for every client.</text>
+  <!-- Subtext -->
+  <text x="80" y="470" font-family="system-ui, sans-serif" font-size="24" fill="#1d1b17" opacity="0.62">AI mentors built on your methodology.</text>
+  <!-- Accent dot -->
+  <circle cx="1120" cy="530" r="80" fill="#9a6a3c" opacity="0.08"/>
+  <circle cx="1120" cy="530" r="48" fill="#9a6a3c" opacity="0.08"/>
+</svg>
