@@ -204,10 +204,6 @@ section { position: relative; }
 .footer-links { display: flex; gap: 26px; }
 .footer-links a { color: var(--soft); font-size: 14px; transition: color .2s; }
 .footer-links a:hover { color: var(--ink); }
-.footer-social { display: flex; gap: 26px; }
-.footer-social a { color: var(--soft); font-size: 14px; transition: color .2s; }
-.footer-social a:hover { color: var(--ink); }
-
 /* ---------- reveal ---------- */
 .reveal { transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1); }
 html.reveal-ready .reveal { opacity: 0; transform: translateY(22px); }
