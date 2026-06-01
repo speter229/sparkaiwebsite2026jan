@@ -1,0 +1,72 @@
+===================================================================
+TESTIMONIALS SECTION BACKUP
+===================================================================
+Visszarakáshoz: másold vissza a HTML blokkot az index.html-be
+a "PROCESS DIAGRAM" szekció és a "CTA" szekció közé.
+A CSS blokk visszamegy a styles.css-be a "/* ---------- CTA" sor elé.
+A nav linket a nav-links div-be, a footer linket a footer-links div-be.
+===================================================================
+
+
+--- NAV LINK (visszamegy a <div class="nav-links"> blokkba) ------
+
+      <a href="#testimonials">Testimonials</a>
+
+
+--- FOOTER LINK (visszamegy a <div class="footer-links"> blokkba) -
+
+        <a href="#testimonials">Testimonials</a>
+
+
+--- HTML (index.html — a process diagram section és a CTA közé) ---
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section" id="testimonials">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <p class="eyebrow">Testimonials</p>
+        <h2 class="section-title">Hear from the people we work with.</h2>
+        <p class="lead">We've just started — the first results are coming in. Real stories from coaches and course creators will live here soon.</p>
+      </div>
+
+      <div class="bento reveal d1">
+        <div class="tcard placeholder tall"><div class="quote-mark">&ldquo;</div><div class="ph-label">Your story here</div></div>
+        <div class="tcard placeholder"><div class="quote-mark">&ldquo;</div><div class="ph-label">Coming soon</div></div>
+        <div class="tcard placeholder"><div class="quote-mark">&ldquo;</div><div class="ph-label">Coming soon</div></div>
+        <div class="tcard placeholder"><div class="quote-mark">&ldquo;</div><div class="ph-label">Coming soon</div></div>
+        <div class="tcard placeholder tall"><div class="quote-mark">&ldquo;</div><div class="ph-label">Your story here</div></div>
+        <div class="tcard placeholder"><div class="quote-mark">&ldquo;</div><div class="ph-label">Coming soon</div></div>
+      </div>
+
+      <div class="empty-banner reveal d2">
+        <span class="badge">In progress</span>
+        <p>Working with us right now? <a href="https://calendly.com/peter-sparkaiflow/elevate-your-coaching-and-course" target="_blank" rel="noopener" style="color:var(--accent); border-bottom:1px solid var(--accent-dim);">We'd love to feature your story.</a></p>
+      </div>
+    </div>
+  </section>
+
+
+--- CSS (styles.css — a "/* ---------- CTA" sor elé visszamásolni) -
+
+/* ---------- testimonials ---------- */
+.bento { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 240px; gap: 16px; }
+.tcard { position: relative; border-radius: var(--radius); border: 1px solid var(--line); background: var(--panel); overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 24px; }
+.tcard.tall { grid-row: span 2; }
+.tcard.placeholder { align-items: center; justify-content: center; background: radial-gradient(80% 80% at 50% 30%, rgba(154,106,60,0.06), transparent 70%), var(--panel); border-style: dashed; border-color: var(--line-2); }
+.tcard.placeholder .quote-mark { font-family: var(--serif); font-style: italic; font-size: 68px; line-height: 0.6; color: var(--mute); opacity: 0.55; }
+.tcard.placeholder .ph-label { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mute); margin-top: 22px; }
+.empty-banner { text-align: center; margin-top: 40px; color: var(--soft); font-size: 15px; }
+.empty-banner .badge { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent-dim); background: var(--accent-dim); padding: 6px 14px; border-radius: 999px; display: inline-block; margin-bottom: 16px; }
+
+
+--- RESPONSIVE CSS (styles.css — a @media (max-width: 900px) blokkban) -
+
+  .bento { grid-template-columns: 1fr 1fr; }
+
+
+--- RESPONSIVE CSS (styles.css — a @media (max-width: 600px) blokkban) -
+
+  .bento { grid-template-columns: 1fr; grid-auto-rows: 200px; }
+  .tcard.tall { grid-row: span 1; }
+
+===================================================================
