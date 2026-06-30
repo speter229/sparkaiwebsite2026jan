@@ -99,6 +99,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.05; let
 
 .hero-copy { max-width: 880px; }
 .hero-cta { display: flex; align-items: center; gap: 16px; margin-top: 32px; flex-wrap: wrap; }
+.hero .eyebrow { margin-bottom: 24px; }
 .hero .lead { margin-top: 22px; }
 
 /* the glass brain — edges feather into the paper */
