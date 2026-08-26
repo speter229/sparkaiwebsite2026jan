@@ -178,16 +178,6 @@ section { position: relative; }
 .flow-node p { font-size: 14px; color: var(--mute); text-wrap: pretty; }
 .flow-stepno { font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; color: var(--accent); display: block; margin-bottom: 10px; }
 
-/* ---------- testimonials ---------- */
-.bento { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 240px; gap: 16px; }
-.tcard { position: relative; border-radius: var(--radius); border: 1px solid var(--line); background: var(--panel); overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 24px; }
-.tcard.tall { grid-row: span 2; }
-.tcard.placeholder { align-items: center; justify-content: center; background: radial-gradient(80% 80% at 50% 30%, rgba(154,106,60,0.06), transparent 70%), var(--panel); border-style: dashed; border-color: var(--line-2); }
-.tcard.placeholder .quote-mark { font-family: var(--serif); font-style: italic; font-size: 68px; line-height: 0.6; color: var(--mute); opacity: 0.55; }
-.tcard.placeholder .ph-label { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mute); margin-top: 22px; }
-.empty-banner { text-align: center; margin-top: 40px; color: var(--soft); font-size: 15px; }
-.empty-banner .badge { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent-dim); background: var(--accent-dim); padding: 6px 14px; border-radius: 999px; display: inline-block; margin-bottom: 16px; }
-
 /* ---------- CTA (inverted dark panel for contrast) ---------- */
 .cta { position: relative; overflow: hidden; border-radius: clamp(20px, 3vw, 32px); background: #1c1b18; color: var(--paper-lo); padding: clamp(48px, 8vw, 96px); text-align: center; }
 .cta::after { content: ""; position: absolute; inset: 0; background: radial-gradient(70% 90% at 82% 12%, rgba(154,106,60,0.22), transparent 60%); pointer-events: none; }
@@ -198,17 +188,6 @@ section { position: relative; }
 .cta .lead { margin-inline: auto; margin-bottom: 36px; color: rgba(245,242,235,0.72); }
 .cta .btn--primary { background: var(--paper-lo); color: #1c1b18; }
 .cta .btn--primary:hover { background: #fff; }
-
-/* ---------- testimonials ---------- */
-.bento { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 240px; gap: 16px; }
-.tcard { position: relative; border-radius: var(--radius); border: 1px solid var(--line); background: var(--panel); overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 24px; }
-.tcard.tall { grid-row: span 2; }
-.tcard.placeholder { align-items: center; justify-content: center; background: radial-gradient(80% 80% at 50% 30%, rgba(154,106,60,0.06), transparent 70%), var(--panel); border-style: dashed; border-color: var(--line-2); }
-.tcard.placeholder .quote-mark { font-family: var(--serif); font-style: italic; font-size: 68px; line-height: 0.6; color: var(--mute); opacity: 0.55; }
-.tcard.placeholder .ph-label { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mute); margin-top: 22px; }
-.tcard img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.empty-banner { text-align: center; margin-top: 40px; color: var(--soft); font-size: 15px; }
-.empty-banner .badge { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent-dim); background: var(--accent-dim); padding: 6px 14px; border-radius: 999px; display: inline-block; margin-bottom: 16px; }
 
 /* ---------- footer ---------- */
 .footer { padding-block: 56px; border-top: 1px solid var(--line); margin-top: clamp(80px,10vw,140px); }

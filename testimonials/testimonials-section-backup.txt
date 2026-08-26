@@ -1,24 +1,25 @@
 ===================================================================
-TESTIMONIALS SECTION BACKUP
+TESTIMONIALS SECTION BACKUP (removed 2026-08-26, was empty/placeholder)
 ===================================================================
-Visszarakáshoz: másold vissza a HTML blokkot az index.html-be
-a "PROCESS DIAGRAM" szekció és a "CTA" szekció közé.
-A CSS blokk visszamegy a styles.css-be a "/* ---------- CTA" sor elé.
-A nav linket a nav-links div-be, a footer linket a footer-links div-be.
+To restore: paste the HTML block back into site/index.html between the
+"PROCESS DIAGRAM" section and the "CTA" section. Paste the CSS block back
+into site/styles.css before the "/* ---------- CTA" line. Add the nav
+link back into the <div class="nav-links"> block, and the footer link
+back into the <div class="footer-links"> block.
 ===================================================================
 
 
---- NAV LINK (visszamegy a <div class="nav-links"> blokkba) ------
+--- NAV LINK (goes back into <div class="nav-links">) ------
 
       <a href="#testimonials">Testimonials</a>
 
 
---- FOOTER LINK (visszamegy a <div class="footer-links"> blokkba) -
+--- FOOTER LINK (goes back into <div class="footer-links">) -
 
         <a href="#testimonials">Testimonials</a>
 
 
---- HTML (index.html — a process diagram section és a CTA közé) ---
+--- HTML (index.html — between the process diagram section and the CTA) ---
 
   <!-- ============ TESTIMONIALS ============ -->
   <section class="section" id="testimonials">
@@ -33,9 +34,6 @@ A nav linket a nav-links div-be, a footer linket a footer-links div-be.
         <div class="tcard placeholder tall"><div class="quote-mark">&ldquo;</div><div class="ph-label">Your story here</div></div>
         <div class="tcard placeholder"><div class="quote-mark">&ldquo;</div><div class="ph-label">Coming soon</div></div>
         <div class="tcard placeholder"><div class="quote-mark">&ldquo;</div><div class="ph-label">Coming soon</div></div>
-        <div class="tcard placeholder"><div class="quote-mark">&ldquo;</div><div class="ph-label">Coming soon</div></div>
-        <div class="tcard placeholder tall"><div class="quote-mark">&ldquo;</div><div class="ph-label">Your story here</div></div>
-        <div class="tcard placeholder"><div class="quote-mark">&ldquo;</div><div class="ph-label">Coming soon</div></div>
       </div>
 
       <div class="empty-banner reveal d2">
@@ -46,7 +44,7 @@ A nav linket a nav-links div-be, a footer linket a footer-links div-be.
   </section>
 
 
---- CSS (styles.css — a "/* ---------- CTA" sor elé visszamásolni) -
+--- CSS (styles.css — before the "/* ---------- CTA" line) -----------------
 
 /* ---------- testimonials ---------- */
 .bento { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 240px; gap: 16px; }
@@ -55,18 +53,11 @@ A nav linket a nav-links div-be, a footer linket a footer-links div-be.
 .tcard.placeholder { align-items: center; justify-content: center; background: radial-gradient(80% 80% at 50% 30%, rgba(154,106,60,0.06), transparent 70%), var(--panel); border-style: dashed; border-color: var(--line-2); }
 .tcard.placeholder .quote-mark { font-family: var(--serif); font-style: italic; font-size: 68px; line-height: 0.6; color: var(--mute); opacity: 0.55; }
 .tcard.placeholder .ph-label { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mute); margin-top: 22px; }
+.tcard img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .empty-banner { text-align: center; margin-top: 40px; color: var(--soft); font-size: 15px; }
 .empty-banner .badge { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent-dim); background: var(--accent-dim); padding: 6px 14px; border-radius: 999px; display: inline-block; margin-bottom: 16px; }
 
-
---- RESPONSIVE CSS (styles.css — a @media (max-width: 900px) blokkban) -
-
-  .bento { grid-template-columns: 1fr 1fr; }
-
-
---- RESPONSIVE CSS (styles.css — a @media (max-width: 600px) blokkban) -
-
-  .bento { grid-template-columns: 1fr; grid-auto-rows: 200px; }
-  .tcard.tall { grid-row: span 1; }
-
+===================================================================
+Note: styles.css previously had this CSS block duplicated (once before
+the CTA block, once after it). Only one copy is needed on restore.
 ===================================================================
